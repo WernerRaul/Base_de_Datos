@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raul.base_de_datos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CongregacionesMainActivity" />
+        <activity android:name=".PublicadoresMainActivity" />
+        <activity android:name=".ActivityAnadirCongregaciones" />
+        <activity android:name=".ActivityAsistenciaReuniones" />
+        <activity android:name=".ActivityConsultaPromediosCongregacion" />
+        <activity android:name=".ActivityAnadirPublicador" />
+        <activity android:name=".ActivityActividadPublicador" />
+        <activity android:name=".ActivityConsultaActividad" />
+        <activity android:name=".ActivityConsultaActividadPublicadores" />
+        <activity android:name=".ActivityConsultaFinal" />
+        <activity android:name=".ActivityTarjetasGraficas" />
+        <activity android:name=".ActivityGraficaPublicador" />
+        <activity android:name=".ActivityCircuitoVaronesGrafica" />
+        <activity android:name=".ActivityActualizarPublicador" />
+        <activity android:name=".ActivityActualizarActividadPublicador"></activity>
+    </application>
+
+</manifest>

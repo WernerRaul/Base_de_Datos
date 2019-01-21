@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityConsultaActividadPublicadores">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/consulta_de_actividad_de_publicadores"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblCongregacionBolsa"
+                android:gravity="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdbPromediosCongregacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Promedios de La Congregación"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbPublicyPrecdelaCong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Publicadores y precursores de la congregación"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbPrecAuxAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Precursores Auxiliares Actividad"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbPrecRegAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Precursores Regulares Actividad"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbBajaAct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Baja Actividad"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbIrregulares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Irregulares"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbNoHacenRevisitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No hacen Revisitas"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbNoCondEstBib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No conducen Estudios Bíblicos"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbSiCondEstBib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Si conducen estudios Bíblicos"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbAnalisisDeVarones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Análisis de Varones"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbTarjetas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tarjetas"/>
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnConsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CONSULTA"
+                    android:onClick="onClick"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

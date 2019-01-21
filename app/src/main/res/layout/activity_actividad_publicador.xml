@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityActividadPublicador">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/actividad_de_publicador"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/spnCongregacion"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints,NotSibling"
+                tools:layout_editor_absoluteX="151dp" />
+
+            <Spinner
+                android:id="@+id/spnCongregacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/spnPublicador"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <Spinner
+                android:id="@+id/spnPublicador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/edtFecha"
+                app:layout_constraintTop_toBottomOf="@+id/spnCongregacion"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <EditText
+                android:id="@+id/edtFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="año/mes"
+                android:maxLength="10"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/edtHoras"
+                app:layout_constraintTop_toBottomOf="@+id/spnPublicador"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <EditText
+                android:id="@+id/edtHoras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/horas"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/edtRevisitas"
+                app:layout_constraintTop_toBottomOf="@+id/edtFecha"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <EditText
+                android:id="@+id/edtRevisitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/revisitas"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/edtEstudios"
+                app:layout_constraintTop_toBottomOf="@+id/edtHoras"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <EditText
+                android:id="@+id/edtEstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/estudios"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/chkPrecursorAuxiliar"
+                app:layout_constraintTop_toBottomOf="@+id/edtRevisitas"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <CheckBox
+                android:id="@+id/chkPrecursorAuxiliar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/precursor_auxiliar"
+                app:layout_constraintBottom_toTopOf="@+id/edtObservaciones"
+                app:layout_constraintTop_toBottomOf="@+id/edtEstudios"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="133dp" />
+
+            <EditText
+                android:id="@+id/edtObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/observaciones"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/btnIngresarActividad"
+                app:layout_constraintTop_toBottomOf="@+id/chkPrecursorAuxiliar"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="55dp" />
+
+            <Button
+                android:id="@+id/btnIngresarActividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="onClickIngresarActividad"
+                android:text="@string/ingresar_actividad"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtObservaciones"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="136dp"
+                android:background="@drawable/bk_boton_plano"/>
+
+            <TextView
+                android:id="@+id/lblUltimoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

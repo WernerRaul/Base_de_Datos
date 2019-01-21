@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAnadirPublicador">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/a_adir_publicador"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/spnCongregacion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnCongregacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/edtNombrePublicador"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <EditText
+                android:id="@+id/edtNombrePublicador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:selectAllOnFocus="true"
+                android:hint="@string/nombre_del_publicador"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtDireccion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnCongregacion" />
+
+            <EditText
+                android:id="@+id/edtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:selectAllOnFocus="true"
+                android:hint="@string/direccion"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/spnSexo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtNombrePublicador" />
+
+            <Spinner
+                android:id="@+id/spnSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/edtTelefono"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtDireccion" />
+
+            <EditText
+                android:id="@+id/edtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/tel_fono"
+                android:inputType="textPersonName|phone"
+                app:layout_constraintBottom_toTopOf="@+id/edtFechaNacimiento"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnSexo" />
+
+            <EditText
+                android:id="@+id/edtFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/fecha_de_nacimiento"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/edtFechaBautizo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtTelefono" />
+
+            <EditText
+                android:id="@+id/edtFechaBautizo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/fecha_de_bautizo"
+                android:inputType="date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtFechaNacimiento" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/edtObservaciones"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtFechaBautizo">
+
+                <CheckBox
+                    android:id="@+id/chkAnciano"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anciano_congregac"
+                    tools:layout_editor_absoluteX="154dp"
+                    tools:layout_editor_absoluteY="397dp" />
+
+                <CheckBox
+                    android:id="@+id/chkSiervoMinisterial"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/siervo_ministerial"
+                    tools:layout_editor_absoluteX="154dp"
+                    tools:layout_editor_absoluteY="397dp" />
+
+                <CheckBox
+                    android:id="@+id/chkPrecursorRegular"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/precursor_regular"
+                    tools:layout_editor_absoluteX="154dp"
+                    tools:layout_editor_absoluteY="397dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:selectAllOnFocus="true"
+                android:ems="10"
+                android:hint="@string/observaciones"
+                android:inputType="text"
+                app:layout_constraintBottom_toTopOf="@+id/btnIngresarPublicador"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <Button
+                android:id="@+id/btnIngresarPublicador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/ingresar_publicador"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtObservaciones"
+                android:onClick="onClick"
+                android:background="@drawable/bk_boton_plano"/>
+
+            <TextView
+                android:id="@+id/lblUltimoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ultimo registro:"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

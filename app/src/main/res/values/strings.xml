@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Base_de_Datos</string>
+    <string name="title_activity_congregaciones_main2">CongregacionesMain2Activity</string>
+    <string name="title_activity_publicadores_main2">PublicadoresMain2Activity</string>
+    <string name="lblTituloCong">TextView</string>
+    <string name="anadir_congregacion">AÑADIR CONGREGACIÓN</string>
+    <string name="btnEntrar">ENTRAR</string>
+    <string name="lblIngresar">TextView</string>
+    <string name="congregaciones">CONGREGACIONES</string>
+    <string name="ingresar_asistencia">INGRESAR ASISTENCIA</string>
+    <string name="consulta">CONSULTA</string>
+    <string name="CONSULTA">Consulta</string>
+    <string name="asistencia_a_las_reuniones">ASISTENCIA A LAS REUNIONES</string>
+    <string name="mes_a_o">mes/año</string>
+    <string name="reuni_n_entre_semana">Reunión Entre Semana</string>
+    <string name="reuni_n_fin_semana">Reunión Fin Semana</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="a_adir_publicador_">AÑADIR PUBLICADOR</string>
+    <string name="ingresar_actividad_de_publicador">INGRESAR ACTIVIDAD DE PUBLICADOR</string>
+    <string name="consulta_actividad">CONSULTA DE ACTIVIDAD</string>
+    <string name="publicadores">PUBLICADORES</string>
+    <string name="actividad_de_publicador">ACTIVIDAD DE PUBLICADOR</string>
+    <string name="d_m_a">d/m/a</string>
+    <string name="estudios">Estudios</string>
+    <string name="precursor_auxiliar">Precursor Auxiliar?</string>
+    <string name="observaciones">Observaciones</string>
+    <string name="ingresar_actividad">Ingresar Actividad</string>
+    <string name="a_adir_publicador">AÑADIR PUBLICADOR</string>
+    <string name="nombre_del_publicador">Nombre del Publicador</string>
+    <string name="direccion">Direccion</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="fecha_de_bautizo">Fecha de Bautizo</string>
+    <string name="anciano_congregac">Anciano Congregac</string>
+    <string name="ingresar_publicador">INGRESAR PUBLICADOR</string>
+    <string name="congregaci_n">Congregación</string>
+    <string name="baja_actividad">Baja Actividad</string>
+    <string name="filtrar_por_calidad_de_servicio">Filtrar por calidad de servicio</string>
+    <string name="consulta_de_actividad">CONSULTA DE ACTIVIDAD</string>
+    <string name="precursor_regular">Precursor Regular</string>
+    <string name="irregulares_inactivos">Irregulares/Inactivos</string>
+    <string name="no_hacen_revisitas">No hacen Revisitas</string>
+    <string name="estudio_b_blicos">Estudio Bíblicos</string>
+    <string name="no_conducen">No Conducen</string>
+    <string name="si_conducen">Si Conducen</string>
+    <string name="cualquiera">Cualquiera</string>
+    <string name="filtrar_por_sexo">Filtrar por Sexo</string>
+    <string name="todos">Todos</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    <string name="filtrar_por_tipo_de_servicio">Filtrar por tipo de Servicio</string>
+    <string name="siervo_ministerial">Siervo Ministerial</string>
+    <string name="anciano">Anciano</string>
+    <string name="filtrar_por_privilegio">Filtrar por privilegio</string>
+    <string name="precursor_auxiliar_">Precursor Auxiliar</string>
+    <string name="consulta_de_actividad_de_publicadores">CONSULTA DE ACTIVIDAD DE PUBLICADORES</string>
+    <string name="actividad_desde_cuando">Actividad desde cuando</string>
+    <string name="buscar">Buscar</string>
+    <string name="consulta_promedios">CONSULTA PROMEDIOS</string>
+    <string name="horas">Horas</string>
+    <string name="revisitas">Revisitas</string>
+    <string name="estudios_b_blicos">Estudios Bíblicos</string>
+    <string name="publicadores_">Publicadores</string>
+    <string name="precursores_regulares">Precursores Regulares</string>
+    <string name="precursores_auxiliares">Precursores Auxiliares</string>
+    <string name="reuni_n_entre_semana_">Reunión entre semana</string>
+    <string name="reuni_n_fin_de_semana">Reunión fin de semana</string>
+    <string name="a_o_mes">año/mes</string>
+    <string name="Territorios">Territorios</string>
+    <string name="actualizar_actividad_del_publicador">ACTUALIZAR ACTIVIDAD DEL PUBLICADOR</string>
+    <string name="actualizar">ACTUALIZAR</string>
+    <string name="ingresar_actualizaci_n_de_actividad">INGRESAR ACTUALIZACIÓN DE ACTIVIDAD</string>
+    <string-array name="meses_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
